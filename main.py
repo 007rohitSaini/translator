@@ -17,7 +17,7 @@ def translate():
     service.set_service_url(
         'https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/c834483d-509d-4cd9-b437-06ad0e6a3ac6')
 
-    authenticator1 = IAMAuthenticator('9W3UUXRKQh4qNmfMDGJUUo7DYUMj2iRoJM4MNTny-OQ9')
+    authenticator1 = IAMAuthenticator(apikey)
     language_translator = LanguageTranslatorV3(
         version='2018-05-01',
         authenticator=authenticator1
