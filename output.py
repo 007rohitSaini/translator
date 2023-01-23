@@ -8,7 +8,7 @@ import wave
 # import multiprocessing
 def speak(word):
     while True:
-        authenticator = IAMAuthenticator('37a1AZndwd_07_95zhJWy5TleXovZ4-SBe5Q53TeI1W3')
+        authenticator = IAMAuthenticator(apikey)
         service = TextToSpeechV1(
             authenticator=authenticator
         )
