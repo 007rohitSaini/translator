@@ -9,7 +9,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 
 def callapi():
-    authenticator = IAMAuthenticator('5c0sxXyAfWm22iUY0bQQU5ZfljcsqFjbmHaC05vYT6KV')
+    authenticator = IAMAuthenticator(apikey)
     global service
     service = SpeechToTextV1(authenticator=authenticator)
 
